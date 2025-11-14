@@ -172,6 +172,10 @@ definePageMeta({
 
 You may create your own application-side middleware in order to implement custom, more advanced authentication logic.
 
+:::warning
+Creating a custom middleware is an advanced, experimental option and may result in unexpected or undesired behavior if you are not familiar with advanced Nuxt 4 concepts.
+:::
+
 To implement your custom middleware:
 - Create an application-side middleware that applies either globally or is named (see the [Nuxt docs](https://nuxt.com/docs/4.x/api/utils/define-page-meta#defining-middleware) for more);
 - Add logic based on [`useAuth`](/guide/application-side/session-access) to it.
